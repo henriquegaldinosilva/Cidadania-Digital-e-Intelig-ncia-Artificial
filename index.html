@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Segura: Cidadania Digital e IA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cidadania Digital & IA</h1>
+        <p>Desmascarando Deepfakes e Combando a Desinformação</p>
+        <button id="btn-acessibilidade">Alternar Modo Escuro</button>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>O que são Deepfakes?</h2>
+            <p>Deepfakes são vídeos, áudios ou imagens modificados por Inteligência Artificial para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Eles representam um grande risco para a verdade e a democracia.</p>
+        </section>
+
+        <section id="quiz">
+            <h2>Quiz: Você sabe identificar uma Deepfake?</h2>
+            <form id="quiz-form">
+                <label for="q1">1. Vídeos com piscadas não naturais ou falhas ao redor do rosto podem ser indícios de IA?</label>
+                <select id="q1" required>
+                    <option value="">Escolha uma opção...</option>
+                    <option value="sim">Sim, são sinais comuns de manipulação</option>
+                    <option value="nao">Não, a IA já faz isso perfeitamente</option>
+                </select>
+
+                <button type="button" id="btn-verificar">Verificar Resposta</button>
+            </form>
+            <div id="resultado" class="escondido"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido para o Projeto de Cidadania Digital. Conteúdo 100% Autoral.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
