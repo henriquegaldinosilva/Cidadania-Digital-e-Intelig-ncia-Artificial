@@ -1,0 +1,85 @@
+/* Variáveis de cores para facilitar o Modo Escuro */
+:root {
+    --bg-principal: #f4f7f6;
+    --bg-card: #ffffff;
+    --texto: #333333;
+    --cor-destaque: #007bcc;
+}
+
+.dark-mode {
+    --bg-principal: #121212;
+    --bg-card: #1e1e1e;
+    --texto: #e0e0e0;
+    --cor-destaque: #00adb5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background-color: var(--cor-destaque);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Flexbox para alinhar e espaçar as seções */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+section {
+    background-color: var(--bg-card);
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Efeito Hover Suave para Usabilidade */
+button {
+    background-color: var(--cor-destaque);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.escondido {
+    display: none;
+}
+
+#resultado {
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* Responsividade (Media Query) - Aula 4 */
+@media (max-width: 600px) {
+    main {
+        padding: 20px 10px;
+    }
+    section {
+        padding: 15px;
+    }
+}
