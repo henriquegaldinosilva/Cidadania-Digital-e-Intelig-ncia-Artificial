@@ -3,43 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conexão Segura: Cidadania Digital e IA</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Nexus: Cidadania Digital & IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="video-bg">
+        <video autoplay loop muted playsinline>
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-abstract-laser-lights-background-41763-large.mp4" type="video/mp4">
+        </video>
+    </div>
+
     <header>
-        <h1>Cidadania Digital & IA</h1>
-        <p>Desmascarando Deepfakes e Combando a Desinformação</p>
-        <button id="btn-acessibilidade">Alternar Modo Escuro</button>
+        <div class="logo">NEXUS <span>// IA</span></div>
+        <nav>
+            <a href="#direitos">Direitos</a>
+            <a href="#etica">Ética em IA</a>
+            <a href="#quiz">Scanner de Cidadania</a>
+        </nav>
     </header>
 
     <main>
-        <section id="sobre">
-            <h2>O que são Deepfakes?</h2>
-            <p>Deepfakes são vídeos, áudios ou imagens modificados por Inteligência Artificial para fazer pessoas parecerem dizer ou fazer coisas que nunca fizeram. Eles representam um grande risco para a verdade e a democracia.</p>
+        <section class="hero">
+            <h1 class="glitch" data-text="CIDADANIA DIGITAL">CIDADANIA DIGITAL</h1>
+            <p>Navegando na Fronteira da Inteligência Artificial com Responsabilidade e Ética.</p>
+            <a href="#quiz" class="btn-cyber">INICIAR DIAGNÓSTICO</a>
         </section>
 
-        <section id="quiz">
-            <h2>Quiz: Você sabe identificar uma Deepfake?</h2>
-            <form id="quiz-form">
-                <label for="q1">1. Vídeos com piscadas não naturais ou falhas ao redor do rosto podem ser indícios de IA?</label>
-                <select id="q1" required>
-                    <option value="">Escolha uma opção...</option>
-                    <option value="sim">Sim, são sinais comuns de manipulação</option>
-                    <option value="nao">Não, a IA já faz isso perfeitamente</option>
-                </select>
+        <section id="direitos" class="content-section">
+            <h2>01 / Pilares da Cidadania Digital</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=500&q=80');"></div>
+                    <h3>Privacidade de Dados</h3>
+                    <p>Seus dados são sua identidade na era dos algoritmos. Proteger sua pegada digital é o primeiro passo da soberania cibernética.</p>
+                </div>
+                <div class="card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=500&q=80');"></div>
+                    <h3>Combate à Desinformação</h3>
+                    <p>IAs podem gerar deepfakes e textos falsos em massa. O cidadão digital do futuro precisa de senso crítico aguçado para checar fontes.</p>
+                </div>
+            </div>
+        </section>
 
-                <button type="button" id="btn-verificar">Verificar Resposta</button>
-            </form>
-            <div id="resultado" class="escondido"></div>
+        <section id="etica" class="content-section">
+            <h2>02 / Ética e Algoritmos</h2>
+            <div class="cyber-box">
+                <h3>O Viés da Inteligência Artificial</h3>
+                <p>As IAs aprendem com dados humanos. Se os dados forem preconceituosos, a IA replicará esses preconceitos. Exigir algoritmos transparentes e inclusivos é um direito e um dever cidadão.</p>
+            </div>
+        </section>
+
+        <section id="quiz" class="content-section">
+            <h2>03 / Scanner de Consciência Digital</h2>
+            <p class="subtitle">Responda honestamente para medir seu nível de prontidão para o futuro.</p>
+            
+            <div class="quiz-container" id="quiz-box">
+                <div class="question" id="question-text">Carregando pergunta...</div>
+                <div class="options" id="options-container">
+                    </div>
+            </div>
+            <div id="result-box" class="result-box hidden">
+                <h3>Diagnóstico Concluído</h3>
+                <p id="result-text"></p>
+                <button onclick="resetQuiz()" class="btn-cyber">Reiniciar Scanner</button>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Desenvolvido para o Projeto de Cidadania Digital. Conteúdo 100% Autoral.</p>
+        <p>&copy; 2026 Nexus Project. Desenvolvido para o Futuro.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
